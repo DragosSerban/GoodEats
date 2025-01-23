@@ -1,0 +1,222 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Light Theme */
+.light-main-content {
+  background: url('../../../public/light_background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  padding-top: 60px;
+}
+
+.light-main-content .user-home-page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.light-main-content .post,
+.light-main-content .comment {
+  background-color: #ffffff;
+  color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.light-main-content .post:hover,
+.light-main-content .comment:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.light-main-content .post-header,
+.light-main-content .comment-header {
+  background-color: #f8f8f8;
+  color: #333;
+  padding: 10px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.light-main-content .like-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.light-main-content .like-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.light-main-content .like-button:active {
+  background-color: #003f7f;
+  transform: scale(1);
+}
+
+.light-main-content .like-button:disabled {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+  color: #a0a0a0;
+}
+
+.light-main-content .post-body,
+.light-main-content .comments-section {
+  background-color: #f7f7f7;
+  padding: 15px;
+}
+
+.light-main-content .add-post button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.light-main-content .add-post button:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.light-main-content .add-post button:active {
+  background-color: #003f7f;
+  transform: translateY(0);
+}
+
+.light-main-content .add-post button:disabled {
+  background-color: #d3d3d3;
+  cursor: not-allowed;
+}
+
+.light-main-content .add-post button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.6);
+}
+
+/* Dark Theme */
+.dark-main-content {
+  background: url('../../../public/dark_background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  padding-top: 60px;
+}
+
+.dark-main-content .user-home-page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 25px;
+  background-color: rgba(30, 30, 30, 0.85);
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.dark-main-content .post,
+.dark-main-content .comment {
+  background-color: #2a2a2a;
+  color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.dark-main-content .post:hover,
+.dark-main-content .comment:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+.dark-main-content .post-header,
+.dark-main-content .comment-header {
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 10px;
+  border-bottom: 1px solid #333;
+}
+
+.dark-main-content .like-button {
+  background-color: #bb86fc;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.dark-main-content .like-button:hover {
+  background-color: #8a4bff;
+  transform: scale(1.05);
+}
+
+.dark-main-content .like-button:active {
+  background-color: #6200ea;
+  transform: scale(1);
+}
+
+.dark-main-content .like-button:disabled {
+  background-color: #4a4a4a;
+  cursor: not-allowed;
+  color: #a0a0a0;
+}
+
+.dark-main-content .post-body,
+.dark-main-content .comments-section {
+  background-color: #333;
+  padding: 15px;
+}
+
+.dark-main-content .add-post button {
+  padding: 14px 28px;
+  font-size: 18px;
+  background: linear-gradient(135deg, #bb86fc, #6200ea);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.dark-main-content .add-post button:hover {
+  background-color: #8a4bff;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.dark-main-content .add-post button:active {
+  background-color: #6200ea;
+  transform: translateY(0);
+}
+
+.dark-main-content .add-post button:disabled {
+  background-color: #2c2c2c;
+  cursor: not-allowed;
+}
+
+.dark-main-content .add-post button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(186, 134, 252, 0.7);
+}
